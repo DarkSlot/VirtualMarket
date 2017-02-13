@@ -18,6 +18,7 @@ public class VirtualMarket : ModuleRules
 		PrivateIncludePaths.AddRange(
 			new string[] {
 				"VirtualMarket/Private",
+                "UMG",
 				// ... add other private include paths required here ...
 			}
 			);
@@ -25,8 +26,8 @@ public class VirtualMarket : ModuleRules
 		
 		PublicDependencyModuleNames.AddRange(
 			new string[]
-			{
-				"Core",
+            {
+                "Core",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -34,11 +35,13 @@ public class VirtualMarket : ModuleRules
 		
 		PrivateDependencyModuleNames.AddRange(
 			new string[]
-			{
-				"CoreUObject",
+            {
+                "CoreUObject",
 				"Engine",
 				"Slate",
 				"SlateCore",
+                "UMG",
+                "CISQLite3",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
